@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#008def">
+
+
+
+    <RelativeLayout
+        android:id="@+id/title_bar_device_list"
+        style="@style/match_match"
+        >
+
+        <!--<ImageButton
+            android:id="@+id/button_back"
+            style="@style/wrap_wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/back_arrow_button"
+        />-->
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/match_wrap"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="NearbyPlaces"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+          />
+
+
+        <ImageButton
+            android:id="@+id/rate_im"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/rate"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/share_im"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_toLeftOf="@+id/rate_im"
+            android:layout_toStartOf="@+id/rate_im"
+            android:background="@drawable/share"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>

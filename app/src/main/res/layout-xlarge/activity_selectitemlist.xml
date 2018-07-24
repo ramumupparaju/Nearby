@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/relt1"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Radius:"
+            android:textColor="#008def"
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/radius"
+            android:textSize="22dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="100dp"
+
+            android:id="@+id/spinner1"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="240dp"
+            android:id="@+id/spinner2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relt2"
+        android:layout_below="@+id/relt1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listlayout"
+            >
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#000000"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="40dp"
+                />
+            <TextView
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listview"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/maplayout"
+            android:paddingBottom="40dp">
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="80dp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/relt3"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:id="@+id/linear"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/list123"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dip"
+                android:layout_weight="0.47"
+                android:background="@drawable/button"
+                android:text="List"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <Button
+                android:id="@+id/mapbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="2dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.47"
+                android:background="@drawable/button"
+                android:text="Map"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
